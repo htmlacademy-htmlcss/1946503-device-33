@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог проекта "Девайс"</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="page-header">
     <img src="images/logo-device.svg" width="145" height="36" alt="Логотип магазина device" class="header-logo">
     <h1 class="visually-hidden">Магазин девайсов</h1>
     <nav class="header-navigation">
-      <ul class="navigation-list navigation-user">
+      <ul class="navigation-user">
         <li class="navigation-item">
-          <input type="search">
+          <input class="navigation-search" type="search" placeholder="Текст поиска">
           <button>Найти</button>
         </li>
         <li class="navigation-item">
           <a href="#" class="navigation-link"><img src="images/user-icon.svg" width="13" height="12" alt="Иконка пользователя">Коля Петухов</a>
+        </li>
+        <li class="navigation-item">
+          <a href="#" class="navigation-exit">Выйти</a>
         </li>
         <li class="navigation-item">
           <a href="#" class="navigation-link"><img src="images/comparison-icon.svg" width="10" height="12" alt="Иконка сравнения">Сравнить</a>
@@ -47,7 +51,7 @@
 
     <main class="main-inner">
         <header class="inner-header">
-            <h2 class="breadcrumbs-title">Моноподы для селфи</h2>
+            <h2 class="title breadcrumbs-title">Моноподы для селфи</h2>
             <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                     <a href="#" class="breadcrumbs-link">Главная</a>
@@ -76,8 +80,8 @@
             <form action="https://echo.htmlacademy.ru/" class="catalog-filters" method="get">
                 <fieldset class="catalog-filter-group">
                     <legend class="catalog-filter-title">Стоимость</legend>
-                    <span>от 0</span>
-                    <span>до 5000</span>
+                    <span class="filter-price">от 0</span>
+                    <span class="filter-price">до 5000</span>
                     <input type="range" min="0" max="10000">
                 </fieldset>
                 <fieldset class="catalog-filter-group">
@@ -172,19 +176,19 @@
                   </a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link pagination-current">1</a>
+                  <a class="pagination-link pagination-number">1</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">2</a>
+                  <a class="pagination-link pagination-number" href="#">2</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">3</a>
+                  <a class="pagination-link pagination-number" href="#">3</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">4</a>
+                  <a class="pagination-link pagination-number" href="#">4</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">5</a>
+                  <a class="pagination-link pagination-number" href="#">5</a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link pagination-next" href="#">
@@ -193,7 +197,7 @@
                   </a>
                 </li>
               </ul>
-            <button class="button pagination-show-more" type="button">Показать ещё</button>
+            <button class="pagination-show-more" type="button">Загрузить ещё</button>
         </section>
 
     </main>
@@ -201,7 +205,7 @@
     <footer class="page-footer">
       <img src="images/logo-device-footer.svg" width="145" height="36" alt="Логотип магазина device" class="footer-logo">
       <address class="contacts-address footer-contacts">
-        <p class="contacts-address-text footer-contacts">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       </address>
       <img src="images/trait-footer.svg" width="80" height="7" alt="Желтая линия">
       <nav class="footer-navigation">
@@ -217,7 +221,7 @@
           </li>
         </ul>
       </nav>
-      <a href="tel:78128121212" class="contacts-phone">+7 (812) 812-12-12</a>
+      <a href="tel:78128121212" class="contacts-phone footer-phone">+7 (812) 812-12-12</a>
       <div class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -246,6 +250,7 @@
       </div>
 
     </footer>
+
 
 </body>
 </html>
