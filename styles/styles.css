@@ -1,6 +1,14 @@
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
   background-color: #ffffff;
   color: #000000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 @font-face {
@@ -32,6 +40,24 @@ body {
   font-display: swap;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
+.page-header {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.device-slider {
+  display: flex;
+}
+
 .navigation-item button {
   font-family: "Rubik";
   font-style: normal;
@@ -48,6 +74,10 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-user {
@@ -57,6 +87,8 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  display: flex;
+  justify-content: space-between;
   }
 
 .title {
@@ -95,6 +127,7 @@ body {
   font-size: 36px;
   line-height: 30px;
   color: #000000;
+
 }
 
 .about-assortment {
@@ -179,6 +212,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+  display: flex;
 }
 
 .filters-text {
@@ -285,6 +319,11 @@ body {
   background-color: #FFE17F;
 }
 
+.assortment-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .assortment-link {
   background-color: #FFE17F;
 }
@@ -293,8 +332,20 @@ body {
   background: #F0F0F0;
 }
 
+.services-delivery {
+  display: flex;
+}
+
 .delivery {
   background: #F0F0F0;
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.delivery-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .delivery-logo {
@@ -305,8 +356,22 @@ body {
   background: rgba(220, 220, 220, 0.5);
 }
 
-.newsletter {
+.newsletter-section {
   background: #F0F0F0;
+  display: flex;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.newsletter {
+  display: flex;
 }
 
 .page-footer {
@@ -315,6 +380,7 @@ body {
 
 .catalog-products {
   background: #F0F0F0;
+  display: flex;
 }
 
 .product-list {
@@ -323,4 +389,16 @@ body {
 
 .pagination {
   background: #F0F0F0;
+}
+
+.feedback {
+  display: flex;
+}
+
+.products-wrapper {
+  width: 840px;
+}
+
+.pagination {
+  display: flex;
 }
