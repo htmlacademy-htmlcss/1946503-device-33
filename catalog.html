@@ -32,7 +32,7 @@
       </ul>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a href="#" class="navigation-link">Каталог товаров</a>
+          <a href="#" class="navigation-catalog">Каталог товаров</a>
           <img src="images/catalog-icon.svg" width="50" height="50" alt="Выпадающее меню">
         </li>
         <li class="navigation-item">
@@ -67,21 +67,26 @@
             </ul>
         </header>
         </div>
-        <div class="page-container">
-          <section class="catalog-products">
+        <section class="catalog-products">
+          <div class="page-container">
+          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+            <ul class="filters-text">
+                <li class="filters-item">фильтр:</li>
+                <li class="filters-item">сортировка:</li>
+                <li class="filters-item">
+                    <select class="select-control" aria-label="Сортировка">
+                        <option value="popular">популярные</option>
+                        <option value="cheap">дешёвые</option>
+                        <option value="expensive">дорогие</option>
+                      </select>
+                </li>
+                <li class="filters-item">
+                  <img src="images/sort-up.png" alt="Стрелка вверх">
+                  <img src="images/sort-down.png" alt="Стрелка вниз">
+                </li>
+            </ul>
+          <div class="catalog-wrapper">
             <div class="filter-wrapper">
-              <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-              <ul class="filters-text">
-                  <li class="filters-item">фильтр:</li>
-                  <li class="filters-item">сортировка:</li>
-                  <li class="filters-item">
-                      <select class="select-control" aria-label="Сортировка">
-                          <option value="popular">популярные</option>
-                          <option value="cheap">дешёвые</option>
-                          <option value="expensive">дорогие</option>
-                        </select>
-                  </li>
-              </ul>
               <form action="https://echo.htmlacademy.ru/" class="catalog-filters" method="get">
                   <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">Стоимость</legend>
@@ -149,30 +154,40 @@
                 <li class="product-card">
                     <a href="#" class="product-card-link">
                         <img src="images/catalog-images/selfiestick-1.jpg" width="360" height="380" alt="Любительская селфи-палка" class="product-card-image">
-                        <h3 class="product-card-title">Любительская селфи-палка</h3>
+                        <div class="card-wrapper">
+                          <h3 class="product-card-title">Любительская селфи-палка</h3>
+                          <b class="product-card-price">500 ₽</b>
+                        </div>
                     </a>
-                    <b class="product-card-price">500 ₽</b>
                 </li>
                 <li class="product-card">
                     <a href="#" class="product-card-link">
                         <img src="images/catalog-images/selfiestick-2.jpg"  width="360" height="380" alt="Профессиональная селфи-палка" class="product-card-image">
-                        <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                        <div class="card-wrapper">
+                          <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                          <b class="product-card-price">1 500 ₽</b>
+                        </div>
                     </a>
-                    <b class="product-card-price">1 500 ₽</b>
+
                 </li>
                 <li class="product-card">
                     <a href="#" class="product-card-link">
                         <img src="images/catalog-images/selfiestick-3.jpg"  width="360" height="380" alt="Непотопляемая селфи-палка" class="product-card-image">
-                        <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                        <div class="card-wrapper">
+                          <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                          <b class="product-card-price">2 500 ₽</b>
+                        </div>
                     </a>
-                    <b class="product-card-price">2 500 ₽</b>
+
                 </li>
                 <li class="product-card">
                     <a href="#" class="product-card-link">
                         <img src="images/catalog-images/selfiestick-4.jpg"  width="360" height="380" alt="Селфи-палка «Следуй за мной»" class="product-card-image">
-                        <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                        <div class="card-wrapper">
+                          <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                          <b class="product-card-price">1 500 ₽</b>
+                        </div>
                     </a>
-                    <b class="product-card-price">1 500 ₽</b>
                 </li>
             </ul>
             <button class="pagination-show-more" type="button">Загрузить ещё</button>
@@ -206,8 +221,9 @@
                 </li>
               </ul>
             </div>
-        </section>
+          </div>
         </div>
+      </section>
 
     </main>
 
