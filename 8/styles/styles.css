@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  min-width: 1160px;
   margin: 0;
   background-color: #ffffff;
   color: #000000;
@@ -76,18 +77,42 @@ body {
   color: #444444;
 }
 
-.button {
+.button,
+.tab-links {
   padding: 6px 40px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
   position: relative;
+  z-index: 3;
+  border: none;
+}
+
+.button::before,
+.tab-links::before {
+  content: '';
+  position: absolute;
+  background-color: #FFE17F;
+  height: 8px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.services-item:hover .tab-links::before {
+  background-color: inherit;
+}
+
+.services-item:hover .tab-links {
+  color: #FFE17F;
 }
 
 .header-wrapper {
@@ -116,6 +141,7 @@ body {
   display: flex;
   padding: 0;
   margin-top: 30px;
+  margin-bottom: 30px;
   align-items: center;
 }
 
@@ -168,6 +194,7 @@ body {
 
 .entrance-item {
   margin-right: auto;
+  margin-left: 27px;
 }
 
 .navigation-link {
@@ -190,6 +217,10 @@ body {
 
 .logo:focus {
   outline: 2px solid #AF4FFF;
+}
+
+.assortment {
+  margin-bottom: 70px;
 }
 
 .assortment-card .about-assortment:hover {
@@ -229,7 +260,7 @@ body {
 }
 
 .navigation-icon {
-  padding: 0 10px 0 20px;
+  padding: 0 10px 0 10px;
 }
 
 .navigation-catalog {
@@ -415,8 +446,8 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  padding:75px 0;
-  border-right: 7px solid #000000;
+  padding: 60px 0;
+  border-right: 8px solid #000000;
 }
 
 .services-background {
@@ -432,14 +463,27 @@ body {
 .tab-links {
   border: none;
   cursor: pointer;
+  background-color: inherit;
+  padding: 0;
+  width: 160px;
+}
+
+.about-delivery-text {
+  width: 452px;
 }
 
 .services-item {
-  padding-right: 120px;
+  padding-right: 125px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .services-item:not(:first-child) {
-  padding-top: 55px;
+  margin-top: 35px;
+}
+
+.services-item:hover {
+  background-color: black;
 }
 
 .services-title {
@@ -461,7 +505,8 @@ body {
   align-items: center;
   width: 1160px;
   margin: 0 auto;
-  background-color: #F0F0F0;;
+  background-color: #F0F0F0;
+  cursor: pointer;
 }
 
 .delivery-wrapper:active {
@@ -609,7 +654,6 @@ body {
   outline: none;
   border: none;
   background-color: #F0F0F0;
-  border: 5px solid #C4C4C4;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -620,6 +664,7 @@ body {
   color: #000000;
   margin-left: -5px;
   cursor: pointer;
+  outline: 5px solid #C4C4C4;
 }
 
 .info-free {
@@ -738,8 +783,24 @@ body {
   margin-top: 16px;
 }
 
-.breadcrumbs-item::after:not(:last-child) {
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 36px;
+
+}
+
+.breadcrumbs-item:not(:last-child):after {
   content: '';
+  display: block;
+  position: absolute;
+  right: -20px;
+  top: 6px;
+  width: 4px;
+  height: 7px;
+  background-image: url(/images/breadcrumbs-arrow.svg);
 }
 
 .breadcrumbs-link {
@@ -764,7 +825,7 @@ body {
   margin: 0;
 }
 
-.filters-item {
+.filters-text-item {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
@@ -772,6 +833,13 @@ body {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.filter-button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
 }
 
 .catalog-container {
@@ -814,7 +882,7 @@ body {
 
 .products-container {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 
 }
 
@@ -843,15 +911,40 @@ body {
 .pagination {
   display: flex;
   background-color: #EBEBEB;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style-type: none;
   padding: 25px;
   margin: 0;
   margin-bottom: 78px;
 }
 
+.pagination-prev,
+.pagination-next {
+  border: none;
+  cursor: pointer;
+}
+
+.pagination-number-list {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
 .pagination-show-more {
   margin-bottom: 45px;
+  padding: 18px 0px;
+  border: 3px solid #E5E5E5;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
 }
 
 .pagination-prev,
@@ -878,16 +971,16 @@ body {
   opacity: 0.3;
   }
 
-.social-icon circle {
+.social-link circle {
   fill: #E5E5E5;
 }
 
-.social-icon circle:hover {
+.social-link:hover circle {
   fill: #FFC700;
   fill-opacity: 1;
 }
 
-.social-icon circle:active {
+.social-icon:active circle {
   fill: #FFC700;
   fill-opacity: 0.3;
 }
@@ -939,4 +1032,129 @@ body {
 
 .footer-phone:focus {
   outline: 1px solid #AF4FFF;
+}
+
+.footer-logo:hover {
+  opacity: 0.6;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
+}
+
+.footer-logo:focus {
+  opacity: 0.3;
+  outline: 1px solid #AF4FFF;
+}
+
+.range-scale {
+  position: relative;
+  height: 1px;
+  margin-bottom: 16px;
+  background-color: #CCCCCC;
+}
+
+.range-bar {
+  position: absolute;
+  height: 1px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.filters-catalog {
+  padding-left: 60px;
+  margin-top: 35px;
+}
+
+.catalog-filter-title {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  padding: 12px 0 20px 0;
+}
+
+.catalog-filter-label {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.catalog-filter-group {
+  border: none;
+  padding: 0;
+}
+
+.filter-wrapper {
+  border-top: 2px solid #000000;
+}
+
+.range-wrapper-inputs {
+  margin-bottom: 35px;
+}
+
+.catalog-filter-list {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 35px;
+  list-style-type: none;
+}
+
+.control {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
 }
