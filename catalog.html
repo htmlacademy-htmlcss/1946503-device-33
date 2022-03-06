@@ -71,13 +71,13 @@
   <main class="main-inner">
     <div class="catalog-container">
       <div class="breadcrumbs">
-        <h2 class="title breadcrumbs-title">Моноподы для селфи</h2>
+        <h1 class="title breadcrumbs-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
-                <a href="#" class="breadcrumbs-link">Главная</a>
+                <a href="index.html" class="breadcrumbs-link">Главная</a>
             </li>
             <li class="breadcrumbs-item">
-                <a href="#" class="breadcrumbs-link">Каталог товаров</a>
+                <a href="catalog.html" class="breadcrumbs-link">Каталог товаров</a>
             </li>
             <li class="breadcrumbs-item">
                 <a href="#" class="breadcrumbs-link">Моноподы для селфи</a>
@@ -89,37 +89,58 @@
     <section class="catalog-products">
       <div class="catalog-container">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-            <ul class="filters-text">
-                <li class="filters-item">фильтр:</li>
-                <li class="filters-item">сортировка:</li>
-                <li class="filters-item">
-                    <select class="select-control" aria-label="Сортировка">
-                        <option value="popular">популярные</option>
-                        <option value="cheap">дешёвые</option>
-                        <option value="expensive">дорогие</option>
-                      </select>
-                </li>
-                <li class="filters-item">
-                  <button class="filter-button"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 0L11.5 10H0.5" fill="black"/>
-                    </svg>
-                    </button>
-                  <button class="filter-button"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black"/>
-                    </svg></button>
-                </li>
-            </ul>
+            <div class="filters-text">
+              <span class="filters-text-item">фильтр:</span>
+              <span class="filters-text-item">сортировка:</span>
+              <div class="filters-select">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">популярные</option>
+                  <option value="cheap">дешёвые</option>
+                  <option value="expensive">дорогие</option>
+                </select>
+              </div>
+              <div class="filters-buttons-wrapper">
+                <a class="filter-button"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 0L11.5 10H0.5" fill="black"/>
+                  </svg>
+                  </a>
+                <a class="filter-button"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black"/>
+                  </svg></a>
+              </div>
+            </div>
       </div>
       <div class="page-container products-container">
         <div class="filters-catalog">
           <form action="https://echo.htmlacademy.ru/" class="catalog-filters" method="get">
+            <div class="filter-wrapper">
               <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Стоимость</legend>
-                  <span class="filter-price">от 0</span>
-                  <span class="filter-price">до 5000</span>
-                  <input type="range" min="0" max="10000">
+                <legend class="catalog-filter-title">Стоимость</legend>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="width: 119px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      от <input class="range-input" type="number" value="50" name="min-price"> ₽
+                    </label>
+                    <label class="catalog-filter-label">
+                      до <input class="range-input" type="number" value="1500" name="max-price" style="width: 37px"> ₽
+                    </label>
+                  </div>
+                </div>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+            </div>
+              <div class="filter-wrapper">
+                <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Цвет</legend>
                   <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
@@ -154,7 +175,9 @@
                       </li>
                   </ul>
               </fieldset>
-              <fieldset class="catalog-filter-group">
+              </div>
+              <div class="filter-wrapper">
+                <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Bluetooth</legend>
                   <ul class="catalog-filter-list">
                       <li class="catalog-filter-item">
@@ -171,6 +194,7 @@
                       </li>
                   </ul>
               </fieldset>
+              </div>
               <button class="button" type="submit">Показать</button>
           </form>
         </div>
@@ -217,13 +241,13 @@
               </li>
           </ul>
           <div class="pagination-catalog-wrapper">
-            <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+            <a href="#" class="pagination-show-more">Загрузить ещё</a>
               <ul class="pagination">
                   <li class="pagination-item">
-                    <button class="pagination-link pagination-prev pagination-disabled">
+                    <a href="#" class="pagination-link pagination-prev pagination-disabled">
                       Назад
                       <span class="visually-hidden">Предыдущая страница</span>
-                    </button>
+                    </a>
                   </li>
                   <li class="pagination-item">
                     <ul class="pagination-number-list">
@@ -245,10 +269,10 @@
                     </ul>
                   </li>
                   <li class="pagination-item">
-                    <button class="pagination-link pagination-next" href="#">
+                    <a href="#" class="pagination-link pagination-next">
                       Вперёд
                       <span class="visually-hidden">Следующая страница</span>
-                    </button>
+                    </a>
                   </li>
                 </ul>
           </div>
