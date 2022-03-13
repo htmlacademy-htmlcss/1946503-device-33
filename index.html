@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Проект "Девайс"</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/fav-icon.png">
 </head>
 
 <body>
@@ -28,7 +30,7 @@
           <ul class="navigation navigation-user">
             <li class="navigation-item">
               <input class="navigation-search" type="search" placeholder="Текст поиска">
-              <button class="search-button">Найти</button>
+              <button class="search-button" type="button">Найти</button>
             </li>
             <li class="navigation-item entrance-item">
               <a href="#" class="navigation-link"><svg class="navigation-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -314,7 +316,7 @@
           <h3 class="delivery-title">Доставим редкий товар под заказ</h3>
           <div class="delivery-info-wrapper">
             <div class="info-wrapper">
-              <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="info-wrapper-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.3">
               <path d="M2 0H0V2H2V0Z" fill="black"/>
               <path d="M2 4H0V12H2V4Z" fill="black"/>
@@ -398,15 +400,17 @@
 
   <footer class="page-footer">
     <div class="page-container">
-      <svg aria-hidden="true" focusable="false" class="footer-logo" width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M27.2 0V35.3H19.6V32.9C17.9 34.8 15.5 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.4 12.1 9.4C15.5 9.4 18 10.6 19.6 12.5V0H27.2ZM19.6 22.7C19.6 18.9 17.1 16.5 13.6 16.5C10.1 16.5 7.6 18.9 7.6 22.7C7.6 26.5 10.1 28.9 13.6 28.9C17.1 28.8 19.6 26.5 19.6 22.7Z" fill="#FFC700"/>
-        <path d="M43.7 29.1999C45.8 29.1999 47.5 28.3999 48.5 27.2999L54.6 30.7999C52.1 34.1999 48.4 35.9999 43.6 35.9999C35 35.9999 29.6 30.1999 29.6 22.6999C29.6 15.1999 35 9.3999 43 9.3999C50.4 9.3999 55.8 15.0999 55.8 22.6999C55.8 23.7999 55.7 24.7999 55.5 25.6999H37.6C38.6 28.2999 40.9 29.1999 43.7 29.1999ZM48.3 20.0999C47.5 17.1999 45.2 16.0999 42.9 16.0999C40 16.0999 38.1 17.4999 37.4 20.0999H48.3Z" fill="#FFC700"/>
-        <path d="M82.1 10.1001L72.8 35.3001H64.2L54.9 10.1001H63.3L68.6 26.1001L73.9 10.1001C73.9 10.1001 82.1 10.1001 82.1 10.1001Z" fill="#FFC700"/>
-        <path d="M83.4 10.1001H91V35.3001H83.4V10.1001Z" fill="#FFC700"/>
-        <path d="M93.6 22.6999C93.6 15.1999 99.3 9.3999 107 9.3999C111.9 9.3999 116.2 11.9999 118.4 15.8999L111.8 19.6999C110.9 17.8999 109.1 16.8999 106.9 16.8999C103.6 16.8999 101.2 19.2999 101.2 22.6999C101.2 26.1999 103.6 28.4999 106.9 28.4999C109.1 28.4999 111 27.3999 111.8 25.6999L118.4 29.4999C116.3 33.3999 112 35.9999 107 35.9999C99.3 35.9999 93.6 30.1999 93.6 22.6999Z" fill="#FFC700"/>
-        <path d="M132.8 29.1999C134.9 29.1999 136.6 28.3999 137.6 27.2999L143.7 30.7999C141.2 34.1999 137.5 35.9999 132.7 35.9999C124.1 35.9999 118.7 30.1999 118.7 22.6999C118.7 15.1999 124.2 9.3999 132.1 9.3999C139.5 9.3999 144.9 15.0999 144.9 22.6999C144.9 23.7999 144.8 24.7999 144.6 25.6999H126.7C127.7 28.2999 130 29.1999 132.8 29.1999ZM137.5 20.0999C136.7 17.1999 134.4 16.0999 132.1 16.0999C129.2 16.0999 127.3 17.4999 126.6 20.0999H137.5Z" fill="#FFC700"/>
-        <path d="M83.4 0V10.1L91 0H83.4Z" fill="#FFC700"/>
-        </svg>
+      <a href="index.html" class="logo-link">
+        <svg aria-hidden="true" focusable="false" class="footer-logo" width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27.2 0V35.3H19.6V32.9C17.9 34.8 15.5 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.4 12.1 9.4C15.5 9.4 18 10.6 19.6 12.5V0H27.2ZM19.6 22.7C19.6 18.9 17.1 16.5 13.6 16.5C10.1 16.5 7.6 18.9 7.6 22.7C7.6 26.5 10.1 28.9 13.6 28.9C17.1 28.8 19.6 26.5 19.6 22.7Z" fill="#FFC700"/>
+          <path d="M43.7 29.1999C45.8 29.1999 47.5 28.3999 48.5 27.2999L54.6 30.7999C52.1 34.1999 48.4 35.9999 43.6 35.9999C35 35.9999 29.6 30.1999 29.6 22.6999C29.6 15.1999 35 9.3999 43 9.3999C50.4 9.3999 55.8 15.0999 55.8 22.6999C55.8 23.7999 55.7 24.7999 55.5 25.6999H37.6C38.6 28.2999 40.9 29.1999 43.7 29.1999ZM48.3 20.0999C47.5 17.1999 45.2 16.0999 42.9 16.0999C40 16.0999 38.1 17.4999 37.4 20.0999H48.3Z" fill="#FFC700"/>
+          <path d="M82.1 10.1001L72.8 35.3001H64.2L54.9 10.1001H63.3L68.6 26.1001L73.9 10.1001C73.9 10.1001 82.1 10.1001 82.1 10.1001Z" fill="#FFC700"/>
+          <path d="M83.4 10.1001H91V35.3001H83.4V10.1001Z" fill="#FFC700"/>
+          <path d="M93.6 22.6999C93.6 15.1999 99.3 9.3999 107 9.3999C111.9 9.3999 116.2 11.9999 118.4 15.8999L111.8 19.6999C110.9 17.8999 109.1 16.8999 106.9 16.8999C103.6 16.8999 101.2 19.2999 101.2 22.6999C101.2 26.1999 103.6 28.4999 106.9 28.4999C109.1 28.4999 111 27.3999 111.8 25.6999L118.4 29.4999C116.3 33.3999 112 35.9999 107 35.9999C99.3 35.9999 93.6 30.1999 93.6 22.6999Z" fill="#FFC700"/>
+          <path d="M132.8 29.1999C134.9 29.1999 136.6 28.3999 137.6 27.2999L143.7 30.7999C141.2 34.1999 137.5 35.9999 132.7 35.9999C124.1 35.9999 118.7 30.1999 118.7 22.6999C118.7 15.1999 124.2 9.3999 132.1 9.3999C139.5 9.3999 144.9 15.0999 144.9 22.6999C144.9 23.7999 144.8 24.7999 144.6 25.6999H126.7C127.7 28.2999 130 29.1999 132.8 29.1999ZM137.5 20.0999C136.7 17.1999 134.4 16.0999 132.1 16.0999C129.2 16.0999 127.3 17.4999 126.6 20.0999H137.5Z" fill="#FFC700"/>
+          <path d="M83.4 0V10.1L91 0H83.4Z" fill="#FFC700"/>
+          </svg>
+      </a>
 
       <div class="footer-wrapper">
         <address class="contacts-address footer-contacts">
@@ -475,7 +479,7 @@
     <div class="modal-delivery">
       <div class="modal-wrapper">
         <h2 class="modal-title">Доставка под заказ</h2>
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z" fill="black"/>
           </svg>
@@ -507,7 +511,7 @@
               <label class="form-label" for="appointment-number">
                 Количество:
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <button class="tooltip-toggle" type="button" id="appointment-number" aria-labelledby="tooltip-label">
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
                       <path d="M14 7H12V9H14V7Z" fill="black"/>
@@ -523,10 +527,10 @@
                 </span>
               </label>
             </span>
-            <input class="modal-field field-number" type="number" id="appointment-number" name="appointment-number" value="1">
+            <input class="modal-field field-number" type="number" name="appointment-number" value="1">
           </p>
         </form>
-        <button class="button modal-button">Отправить</button>
+        <button class="button modal-button" type="button">Отправить</button>
       </section>
     </div>
   </div>
