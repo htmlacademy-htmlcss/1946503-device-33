@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Проект "Девайс"</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/fav-icon.png">
 </head>
 
 <body>
@@ -27,8 +29,10 @@
         <nav class="header-navigation">
           <ul class="navigation navigation-user">
             <li class="navigation-item">
-              <input class="navigation-search" type="search" placeholder="Текст поиска">
-              <button class="search-button">Найти</button>
+              <form action="https://echo.htmlacademy.ru/">
+                <input class="navigation-search" type="search" placeholder="Текст поиска">
+              <button class="search-button" type="button">Найти</button>
+              </form>
             </li>
             <li class="navigation-item entrance-item">
               <a href="#" class="navigation-link"><svg class="navigation-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +48,12 @@
               Сравнить</a>
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-link"><svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a href="#" class="navigation-link">
+                <svg class="navigation-icon-number" width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10.5" cy="11.3889" r="10.5" fill="white"/>
+                  <path d="M7.3996 15.8889C7.30627 15.8889 7.22693 15.8609 7.1616 15.8049C7.1056 15.7396 7.0776 15.6602 7.0776 15.5669V15.1189C7.0776 15.0349 7.10093 14.9416 7.1476 14.8389C7.19427 14.7362 7.2876 14.6242 7.4276 14.5029L10.3956 11.5349C10.8716 11.1336 11.2449 10.7929 11.5156 10.5129C11.7956 10.2236 11.9916 9.94825 12.1036 9.68692C12.2249 9.42558 12.2856 9.15492 12.2856 8.87492C12.2856 8.34292 12.1363 7.92292 11.8376 7.61492C11.5389 7.29758 11.0956 7.13892 10.5076 7.13892C10.1343 7.13892 9.81227 7.21825 9.5416 7.37692C9.27094 7.52625 9.05627 7.73625 8.8976 8.00692C8.74827 8.26825 8.65027 8.56692 8.6036 8.90292C8.58493 9.02425 8.5336 9.10825 8.4496 9.15492C8.37494 9.20158 8.30494 9.22492 8.2396 9.22492H7.5116C7.4276 9.22492 7.3576 9.20158 7.3016 9.15492C7.2456 9.09892 7.2176 9.03358 7.2176 8.95892C7.22693 8.60425 7.3016 8.24958 7.4416 7.89492C7.5816 7.53092 7.78693 7.20425 8.0576 6.91492C8.3376 6.62558 8.67827 6.39225 9.0796 6.21492C9.49027 6.02825 9.96627 5.93492 10.5076 5.93492C11.2449 5.93492 11.8469 6.07025 12.3136 6.34092C12.7896 6.60225 13.1396 6.95225 13.3636 7.39092C13.5876 7.82958 13.6996 8.31025 13.6996 8.83292C13.6996 9.24358 13.6296 9.62158 13.4896 9.96692C13.3496 10.3029 13.1443 10.6342 12.8736 10.9609C12.6123 11.2782 12.2856 11.6049 11.8936 11.9409L9.2056 14.6709H13.5736C13.6763 14.6709 13.7556 14.6989 13.8116 14.7549C13.8769 14.8109 13.9096 14.8902 13.9096 14.9929V15.5669C13.9096 15.6602 13.8769 15.7396 13.8116 15.8049C13.7556 15.8609 13.6763 15.8889 13.5736 15.8889H7.3996Z" fill="black"/>
+                  </svg>
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.3 5.38892L11.8 5.58892L8.6 0.688916C8.5 0.488916 8.2 0.388916 8 0.388916C7.8 0.388916 7.5 0.488916 7.4 0.688916L4.2 5.58892H0.7C0.3 5.58892 0 5.88892 0 6.28892C0 6.38892 0 6.38892 0 6.48892L1.9 13.2889C2.1 13.9889 2.6 14.3889 3.3 14.3889H12.7C13.4 14.3889 13.9 13.9889 14.1 13.2889L16 6.38892C16 6.28892 16 6.28892 16 6.18892C16 5.78892 15.7 5.38892 15.3 5.38892ZM8 2.28892L10.2 5.48892H5.9L8 2.28892Z" fill="black"/>
                 </svg>
                 Корзина</a>
@@ -52,26 +61,30 @@
                   <svg class="popover-svg" width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6.77783H0L7 0.777832L14 6.77783Z" fill="black"/>
                     </svg>
-                  <h2 class="visually-hidden">Товары в корзине</h2>
+                  <h2 class="visually-hidden">Товары в корзине.</h2>
                   <div class="popover-wrapper">
                     <div class="popover-content">
-                      <img src="images/catalog-images/product-1-small.jpg" alt="Селфи-палка" class="popover-image">
+                      <a href="#" class="popover-content-wrapper">
+                        <img src="images/catalog-images/product-1-small.jpg" alt="Селфи-палка" class="popover-image">
                       <span class="popover-title">Любительская<br> селфи-палка</span>
+                      </a>
                       <button class="popover-close-button button-light" type="button">
                         <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
                           </svg>
-                        <span class="visually-hidden">Удалить</span>
+                        <span class="visually-hidden">Удалить.</span>
                       </button>
                     </div>
                     <div class="popover-content">
-                      <img src="images/catalog-images/product-2-small.jpg" alt="Селфи-палка" class="popover-image">
+                      <a href="#" class="popover-content-wrapper">
+                        <img src="images/catalog-images/product-2-small.jpg" alt="Селфи-палка" class="popover-image">
                       <span class="popover-title">Профессиональная<br> селфи-палка</span>
+                      </a>
                       <button class="popover-close-button" type="button">
                         <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
                           </svg>
-                        <span class="visually-hidden">Удалить</span>
+                        <span class="visually-hidden">Удалить.</span>
                       </button>
                     </div>
                   </div>
@@ -79,15 +92,13 @@
                     <span class="popover-number">Товаров: 2</span>
                     <span class="popover-price">Сумма: 2000 ₽</span>
                   </div>
-                  <a class="popover-button">Открыть корзину</a>
+                  <a href="#" class="popover-button">Открыть корзину</a>
                 </div>
             </li>
           </ul>
           <ul class="navigation navigation-list">
-            <li class="navigation-item navigation-catalog">
-              <a href="catalog.html" class="navigation-link">
-                Каталог товаров
-              </a>
+            <li class="navigation-catalog">
+              <a href="catalog.html" class="navigation-link">Каталог товаров
                 <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="25" cy="25.787" r="24" stroke="black" stroke-width="2"/>
                   <g clip-path="url(#clip0_11316_202)">
@@ -99,6 +110,7 @@
                   </clipPath>
                   </defs>
                 </svg>
+              </a>
                 <div class="popover-catalog">
                   <ul class="catalog-list">
                     <li class="catalog-item">
@@ -144,14 +156,14 @@
     <div class="page-container">
       <section class="device-slider">
         <div class="slider-wrapper">
-          <span class="visually-hidden">Фотогалерея</span>
+          <span class="visually-hidden">Фотогалерея.</span>
           <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Фотография квадрокоптера">
           <div class="slider-controls">
             <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующее фото</span>
+              <span class="visually-hidden">Следующее фото.</span>
             </button>
             <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
+              <span class="visually-hidden">Предыдущее фото.</span>
             </button>
           </div>
         </div>
@@ -170,17 +182,17 @@
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                  <span class="visually-hidden">1 фото</span>
+                  <span class="visually-hidden">1 фото.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">2 фото</span>
+                  <span class="visually-hidden">2 фото.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">3 фото</span>
+                  <span class="visually-hidden">3 фото.</span>
                 </button>
               </li>
             </ol>
@@ -199,7 +211,7 @@
       </section>
 
       <section class="assortment">
-        <h2 class="visually-hidden">ассортимент</h2>
+        <h2 class="visually-hidden">ассортимент.</h2>
         <ul class="assortment-list">
           <li class="assortment-item">
             <a href="#" class="assortment-link">
@@ -300,7 +312,7 @@
             мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
           </div>
-          <img src="images/delivery-courier.svg" width="133" height="158" alt="Логотип доставки" class="services-image">
+          <img src="images/delivery-courier.svg" width="136" height="164" alt="Логотип доставки" class="services-image">
         </div>
       </div>
     </section>
@@ -314,7 +326,7 @@
           <h3 class="delivery-title">Доставим редкий товар под заказ</h3>
           <div class="delivery-info-wrapper">
             <div class="info-wrapper">
-              <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="info-wrapper-icon" width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.3">
               <path d="M2 0H0V2H2V0Z" fill="black"/>
               <path d="M2 4H0V12H2V4Z" fill="black"/>
@@ -398,17 +410,19 @@
 
   <footer class="page-footer">
     <div class="page-container">
-      <svg aria-hidden="true" focusable="false" class="footer-logo" width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M27.2 0V35.3H19.6V32.9C17.9 34.8 15.5 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.4 12.1 9.4C15.5 9.4 18 10.6 19.6 12.5V0H27.2ZM19.6 22.7C19.6 18.9 17.1 16.5 13.6 16.5C10.1 16.5 7.6 18.9 7.6 22.7C7.6 26.5 10.1 28.9 13.6 28.9C17.1 28.8 19.6 26.5 19.6 22.7Z" fill="#FFC700"/>
-        <path d="M43.7 29.1999C45.8 29.1999 47.5 28.3999 48.5 27.2999L54.6 30.7999C52.1 34.1999 48.4 35.9999 43.6 35.9999C35 35.9999 29.6 30.1999 29.6 22.6999C29.6 15.1999 35 9.3999 43 9.3999C50.4 9.3999 55.8 15.0999 55.8 22.6999C55.8 23.7999 55.7 24.7999 55.5 25.6999H37.6C38.6 28.2999 40.9 29.1999 43.7 29.1999ZM48.3 20.0999C47.5 17.1999 45.2 16.0999 42.9 16.0999C40 16.0999 38.1 17.4999 37.4 20.0999H48.3Z" fill="#FFC700"/>
-        <path d="M82.1 10.1001L72.8 35.3001H64.2L54.9 10.1001H63.3L68.6 26.1001L73.9 10.1001C73.9 10.1001 82.1 10.1001 82.1 10.1001Z" fill="#FFC700"/>
-        <path d="M83.4 10.1001H91V35.3001H83.4V10.1001Z" fill="#FFC700"/>
-        <path d="M93.6 22.6999C93.6 15.1999 99.3 9.3999 107 9.3999C111.9 9.3999 116.2 11.9999 118.4 15.8999L111.8 19.6999C110.9 17.8999 109.1 16.8999 106.9 16.8999C103.6 16.8999 101.2 19.2999 101.2 22.6999C101.2 26.1999 103.6 28.4999 106.9 28.4999C109.1 28.4999 111 27.3999 111.8 25.6999L118.4 29.4999C116.3 33.3999 112 35.9999 107 35.9999C99.3 35.9999 93.6 30.1999 93.6 22.6999Z" fill="#FFC700"/>
-        <path d="M132.8 29.1999C134.9 29.1999 136.6 28.3999 137.6 27.2999L143.7 30.7999C141.2 34.1999 137.5 35.9999 132.7 35.9999C124.1 35.9999 118.7 30.1999 118.7 22.6999C118.7 15.1999 124.2 9.3999 132.1 9.3999C139.5 9.3999 144.9 15.0999 144.9 22.6999C144.9 23.7999 144.8 24.7999 144.6 25.6999H126.7C127.7 28.2999 130 29.1999 132.8 29.1999ZM137.5 20.0999C136.7 17.1999 134.4 16.0999 132.1 16.0999C129.2 16.0999 127.3 17.4999 126.6 20.0999H137.5Z" fill="#FFC700"/>
-        <path d="M83.4 0V10.1L91 0H83.4Z" fill="#FFC700"/>
-        </svg>
+      <a href="index.html" class="logo-link">
+        <svg aria-hidden="true" focusable="false" class="footer-logo" width="145" height="36" viewBox="0 0 145 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M27.2 0V35.3H19.6V32.9C17.9 34.8 15.5 36 12.1 36C5.5 36 0 30.2 0 22.7C0 15.2 5.5 9.4 12.1 9.4C15.5 9.4 18 10.6 19.6 12.5V0H27.2ZM19.6 22.7C19.6 18.9 17.1 16.5 13.6 16.5C10.1 16.5 7.6 18.9 7.6 22.7C7.6 26.5 10.1 28.9 13.6 28.9C17.1 28.8 19.6 26.5 19.6 22.7Z" fill="#FFC700"/>
+          <path d="M43.7 29.1999C45.8 29.1999 47.5 28.3999 48.5 27.2999L54.6 30.7999C52.1 34.1999 48.4 35.9999 43.6 35.9999C35 35.9999 29.6 30.1999 29.6 22.6999C29.6 15.1999 35 9.3999 43 9.3999C50.4 9.3999 55.8 15.0999 55.8 22.6999C55.8 23.7999 55.7 24.7999 55.5 25.6999H37.6C38.6 28.2999 40.9 29.1999 43.7 29.1999ZM48.3 20.0999C47.5 17.1999 45.2 16.0999 42.9 16.0999C40 16.0999 38.1 17.4999 37.4 20.0999H48.3Z" fill="#FFC700"/>
+          <path d="M82.1 10.1001L72.8 35.3001H64.2L54.9 10.1001H63.3L68.6 26.1001L73.9 10.1001C73.9 10.1001 82.1 10.1001 82.1 10.1001Z" fill="#FFC700"/>
+          <path d="M83.4 10.1001H91V35.3001H83.4V10.1001Z" fill="#FFC700"/>
+          <path d="M93.6 22.6999C93.6 15.1999 99.3 9.3999 107 9.3999C111.9 9.3999 116.2 11.9999 118.4 15.8999L111.8 19.6999C110.9 17.8999 109.1 16.8999 106.9 16.8999C103.6 16.8999 101.2 19.2999 101.2 22.6999C101.2 26.1999 103.6 28.4999 106.9 28.4999C109.1 28.4999 111 27.3999 111.8 25.6999L118.4 29.4999C116.3 33.3999 112 35.9999 107 35.9999C99.3 35.9999 93.6 30.1999 93.6 22.6999Z" fill="#FFC700"/>
+          <path d="M132.8 29.1999C134.9 29.1999 136.6 28.3999 137.6 27.2999L143.7 30.7999C141.2 34.1999 137.5 35.9999 132.7 35.9999C124.1 35.9999 118.7 30.1999 118.7 22.6999C118.7 15.1999 124.2 9.3999 132.1 9.3999C139.5 9.3999 144.9 15.0999 144.9 22.6999C144.9 23.7999 144.8 24.7999 144.6 25.6999H126.7C127.7 28.2999 130 29.1999 132.8 29.1999ZM137.5 20.0999C136.7 17.1999 134.4 16.0999 132.1 16.0999C129.2 16.0999 127.3 17.4999 126.6 20.0999H137.5Z" fill="#FFC700"/>
+          <path d="M83.4 0V10.1L91 0H83.4Z" fill="#FFC700"/>
+          </svg>
+      </a>
 
-      <div class="footer-wrapper">
+      <div class="main-footer-wrapper">
         <address class="contacts-address footer-contacts">
           <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
@@ -425,7 +439,7 @@
             </li>
           </ul>
         </nav>
-        <a href="tel:78128121212" class="contacts-phone footer-phone">Тел.: +7 (812) 812-12-12</a>
+        <a href="tel:78128121212" class="footer-phone">Тел.: +7 (812) 812-12-12</a>
       </div>
       <div class="footer-social">
         <div class="footer-social-wrapper">
@@ -439,7 +453,7 @@
                   <circle cx="20" cy="20" r="20" fill="currentColor" fill-opacity="0.3"/>
                   <path d="M22.5 14H25V11H21.6C18.8 11 18 12.7 18 15.2V17H16V20H18V29H21V20H24.3L24.9 17H21V15.5C21 14.7 21.3 14 22.5 14Z" fill="#444444"/>
                   </svg>
-                <span class="visually-hidden">Фейсбук</span>
+                <span class="visually-hidden">Фейсбук.</span>
               </a>
             </li>
             <li class="footer-social-item">
@@ -449,7 +463,7 @@
                   <path d="M20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22Z" fill="#444444"/>
                   <path d="M26.7 13.3C25.8 12.4 24.7 12 23.3 12H16.7C13.9 12 12 13.9 12 16.7V23.3C12 24.7 12.4 25.9 13.4 26.7C14.3 27.6 15.4 28 16.7 28H23.3C24.7 28 25.9 27.6 26.7 26.7C27.5 25.8 28 24.7 28 23.3V16.7C28 15.3 27.6 14.1 26.7 13.3ZM20 24.1C17.8 24.1 15.9 22.3 15.9 20C15.9 17.7 17.8 15.9 20 15.9C22.2 15.9 24.1 17.7 24.1 20C24.1 22.3 22.2 24.1 20 24.1ZM24.6 16.7C23.9 16.7 23.3 16.2 23.3 15.4C23.3 14.6 23.8 14.1 24.6 14.1C25.3 14.1 25.9 14.7 25.9 15.4C25.9 16.1 25.3 16.7 24.6 16.7Z" fill="#444444"/>
                   </svg>
-                <span class="visually-hidden">Инстаграмм</span>
+                <span class="visually-hidden">Инстаграмм.</span>
               </a>
             </li>
             <li class="footer-social-item">
@@ -458,12 +472,12 @@
                   <circle cx="20" cy="20" r="20" fill="currentColor" fill-opacity="0.3"/>
                   <path d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z" fill="#444444"/>
                   </svg>
-                <span class="visually-hidden">Твиттер</span>
+                <span class="visually-hidden">Твиттер.</span>
               </a>
             </li>
           </ul>
           <a href="https://htmlacademy.ru/" class="school-logo">
-            <span class="visually-hidden">Логотип html academy</span>
+            <span class="visually-hidden">Логотип html academy.</span>
             <svg width="115" height="33" viewBox="0 0 115 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg>
           </a>
         </div>
@@ -475,11 +489,11 @@
     <div class="modal-delivery">
       <div class="modal-wrapper">
         <h2 class="modal-title">Доставка под заказ</h2>
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z" fill="black"/>
           </svg>
-        <span class="visually-hidden">Закрыть</span>
+        <span class="visually-hidden">Закрыть.</span>
       </button>
       </div>
       <section class="modal-content">
@@ -507,7 +521,7 @@
               <label class="form-label" for="appointment-number">
                 Количество:
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <button class="tooltip-toggle" type="button" id="appointment-number" aria-labelledby="tooltip-label">
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
                       <path d="M14 7H12V9H14V7Z" fill="black"/>
@@ -523,10 +537,10 @@
                 </span>
               </label>
             </span>
-            <input class="modal-field field-number" type="number" id="appointment-number" name="appointment-number" value="1">
+            <input class="modal-field field-number" type="number" name="appointment-number" value="1">
           </p>
         </form>
-        <button class="button modal-button">Отправить</button>
+        <button class="button modal-button" type="button">Отправить</button>
       </section>
     </div>
   </div>
