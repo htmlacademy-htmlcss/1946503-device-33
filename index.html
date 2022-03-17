@@ -7,7 +7,7 @@
   <title>Проект "Девайс"</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/fav-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
 </head>
 
 <body>
@@ -397,7 +397,7 @@
         </div>
         <div class="newsletter-subscription">
           <form action="https://echo.htmlacademy.ru/" class="newsletter-form" method="post">
-            <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email">
+            <input class="field" type="email" placeholder="Ваш e-mail" name="newsletter-email" required>
             <button class="newsletter-button" type="submit">Подписаться</button>
           </form>
           <span class="description info-free">
@@ -502,26 +502,26 @@
             <label class="form-label" for="appointment-name">
               Ваше имя:
             </label>
-            <input class="modal-field field-name" type="text" id="appointment-name" name="appointment-name" placeholder="Введите имя">
+            <input class="modal-field field-name" type="text" id="appointment-name" name="your-name" placeholder="Введите имя" required>
           </p>
           <p class="modal modal-form-email">
             <label class="form-label" for="appointment-email">
               Ваш e-mail:
             </label>
-            <input class="modal-field field-email" type="email" id="appointment-email" name="appointment-email">
+            <input class="modal-field field-email" type="email" id="appointment-email" name="your-email" required>
           </p>
           <p class="modal modal-form-product">
             <label class="form-label" for="appointment-product">
               Что нужно привезти:
             </label>
-            <input class="modal-field field-product" type="text" id="appointment-product" name="appointment-product" placeholder="В свободной форме">
+            <input class="modal-field field-product" type="text" id="appointment-product" name="appointment" placeholder="В свободной форме">
           </p>
           <p class="modal modal-form-number">
             <span class="form-label">
               <label class="form-label" for="appointment-number">
                 Количество:
                 <span class="tooltip">
-                  <button class="tooltip-toggle" type="button" id="appointment-number" aria-labelledby="tooltip-label">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="13" cy="13" r="13" fill="#FFE17F"/>
                       <path d="M14 7H12V9H14V7Z" fill="black"/>
@@ -537,10 +537,16 @@
                 </span>
               </label>
             </span>
-            <input class="modal-field field-number" type="number" name="appointment-number" value="1">
+            <svg class="less-icon-modal" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 0H0V2H16V0Z" fill="black"/>
+              </svg>
+              <svg class="more-icon-modal" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                </svg>
+            <input class="modal-field field-number" type="text" name="number" id="appointment-number" value="1">
           </p>
+          <button class="button modal-button" type="submit">Отправить</button>
         </form>
-        <button class="button modal-button" type="button">Отправить</button>
       </section>
     </div>
   </div>
