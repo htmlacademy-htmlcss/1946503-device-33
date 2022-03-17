@@ -378,10 +378,6 @@ body {
   justify-content: space-between;
 }
 
-.pagination-item:not(:first-of-type) {
-  margin-left: 20px;
-}
-
 .slider-pagination {
   list-style-type: none;
   padding: 0;
@@ -1009,6 +1005,7 @@ body {
 .filter-button {
   padding: 6px 49px;
   margin-top: 7px;
+  background-color: inherit;
 }
 
 .catalog-container {
@@ -1139,6 +1136,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  margin-left: 8px;
 }
 
 .pagination-show-more {
@@ -1752,6 +1750,7 @@ body {
   flex-direction: column;
   margin: 0;
   margin-bottom: 42px;
+  position: relative;
 }
 
 .form-label {
@@ -1795,10 +1794,27 @@ body {
 
 .field-number {
   width: 140px;
+  text-align: center;
 }
 
 .modal-wrapper {
   margin-bottom: 42px;
+}
+
+.less-icon-modal {
+  position: absolute;
+  top: 60px;
+  left: 22px;
+  width: 16px;
+  height: 2px;
+}
+
+.more-icon-modal {
+  position: absolute;
+  top: 53px;
+  right: 22px;
+  width: 16px;
+  height: 16px;
 }
 
 .modal-button {
@@ -1869,6 +1885,11 @@ body {
 .pagination-link {
   display: block;
   padding: 23px;
+}
+
+.pagination-link-number {
+  display: block;
+  padding: 23px 15px;
 }
 
 .pagination-prev:hover,
